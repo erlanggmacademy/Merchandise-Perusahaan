@@ -46,6 +46,53 @@
     background: var(--accent-color, #008cad);
     color: #fff;
   }
+
+  /* Scroll-top naik di atas WhatsApp */
+    #scroll-top {
+    bottom: 90px !important;
+    right: 27px !important;
+  }
+
+  /* WhatsApp Floating Button */
+  .whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    animation: pulse 2s infinite;
+  }
+
+  .whatsapp-float:hover {
+    background-color: #128C7E;
+    color: #fff;
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+  }
+
+  @keyframes pulse {
+    0% {
+      box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.6);
+    }
+    70% {
+      box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+    }
+    100% {
+      box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+    }
+  }
 </style>
 </head>
 
@@ -295,10 +342,7 @@
                       <span>4.9 (120)</span>
                     </div>
                   </div>
-                  <div class="price-info">
-                    <span class="starting-from">Mulai dari</span>
-                    <span class="amount">Rp 85.000</span>
-                  </div>
+                  
                   <a href="merchandise-kantor-premium.html" class="explore-btn">
                     <span>Lihat Koleksi</span>
                     <i class="bi bi-arrow-right"></i>
@@ -324,7 +368,7 @@
                     <div class="stats-row">
                       <span class="tour-count"><i class="bi bi-calendar-check"></i> 10+ Paket</span>
                       <span class="rating"><i class="bi bi-star-fill"></i> 4.8</span>
-                      <span class="price">Mulai Rp 150.000</span>
+                      
                     </div>
                     <a href="merchandise-onboarding-karyawan.html" class="quick-link">Lihat Detail <i class="bi bi-chevron-right"></i></a>
                   </div>
@@ -343,7 +387,7 @@
                     <div class="stats-row">
                       <span class="tour-count"><i class="bi bi-calendar-check"></i> 25+ Produk</span>
                       <span class="rating"><i class="bi bi-star-fill"></i> 4.7</span>
-                      <span class="price">Mulai Rp 25.000</span>
+                      
                     </div>
                     <a href="merchandise-custom-logo.html" class="quick-link">Lihat Detail <i class="bi bi-chevron-right"></i></a>
                   </div>
@@ -363,7 +407,7 @@
                     <div class="stats-row">
                       <span class="tour-count"><i class="bi bi-calendar-check"></i> 50+ Produk</span>
                       <span class="rating"><i class="bi bi-star-fill"></i> 4.9</span>
-                      <span class="price">Harga Kompetitif</span>
+                     
                     </div>
                     <a href="all-product.html" class="quick-link">Lihat Detail <i class="bi bi-chevron-right"></i></a>
                   </div>
@@ -394,7 +438,7 @@
               <div class="tour-image">
                 <img src="assets/img/travel/Gift_set_with_notebook.webp" alt="Gift Set Eksekutif" class="img-fluid" loading="lazy">
                 <div class="tour-badge">Top Rated</div>
-                <div class="tour-price">Rp 250.000</div>
+                
               </div>
               <div class="tour-content">
                 <h3>Gift Set Eksekutif Premium</h3>
@@ -428,7 +472,7 @@
               <div class="tour-image">
                 <img src="assets/img/travel/Corporate_merchandise.webp" alt="Welcome Box Onboarding" class="img-fluid" loading="lazy">
                 <div class="tour-badge limited">Best Seller</div>
-                <div class="tour-price">Rp 180.000</div>
+               
               </div>
               <div class="tour-content">
                 <h3>Welcome Box Karyawan Baru</h3>
@@ -462,7 +506,7 @@
               <div class="tour-image">
                 <img src="assets/img/travel/Ceramic_mug.webp" alt="Mug Keramik Custom Logo" class="img-fluid" loading="lazy">
                 <div class="tour-badge new">Harga Ekonomis</div>
-                <div class="tour-price">Rp 35.000</div>
+               
               </div>
               <div class="tour-content">
                 <h3>Mug Keramik Custom Logo</h3>
@@ -805,6 +849,11 @@
       <p>© <span>Copyright</span> <strong class="px-1 sitename">Merchandise Kantor</strong> <span>All Rights Reserved</span></p>
     </div>
   </footer><!-- END FOOTER -->
+    <!-- ======= WHATSAPP FLOATING BUTTON ======= -->
+  <a href="https://wa.me/6288989643555" target="_blank" class="whatsapp-float" title="Chat via WhatsApp">
+    <i class="bi bi-whatsapp"></i>
+  </a>
+
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
