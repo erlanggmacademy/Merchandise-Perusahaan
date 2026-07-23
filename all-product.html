@@ -133,32 +133,32 @@
             <div class="tour-filters">
               <div class="row">
                 <div class="col-lg-4 col-md-6 mb-3">
-                  <select class="form-select">
-                    <option value="">Semua Kategori</option>
-                    <option value="premium">Merchandise Premium</option>
-                    <option value="onboarding">Onboarding Karyawan</option>
-                    <option value="custom-logo">Custom Logo</option>
-                  </select>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-3">
-                  <select class="form-select">
-                    <option value="">Semua Jenis Produk</option>
-                    <option value="tumbler">Tumbler</option>
-                    <option value="kaos">Kaos & Polo</option>
-                    <option value="tas">Tas & Totebag</option>
-                    <option value="mug">Mug & Gelas</option>
-                    <option value="alat-tulis">Alat Tulis</option>
-                    <option value="elektronik">Elektronik</option>
-                  </select>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-3">
-                  <select class="form-select">
-                    <option value="">Min. Order</option>
-                    <option value="25">25+ pcs</option>
-                    <option value="50">50+ pcs</option>
-                    <option value="100">100+ pcs</option>
-                  </select>
-                </div>
+  <select class="form-select" id="filter-kategori">
+    <option value="">Semua Kategori</option>
+    <option value="premium">Merchandise Premium</option>
+    <option value="onboarding">Onboarding Karyawan</option>
+    <option value="custom-logo">Custom Logo</option>
+  </select>
+</div>
+<div class="col-lg-4 col-md-6 mb-3">
+  <select class="form-select" id="filter-jenis">
+    <option value="">Semua Jenis Produk</option>
+    <option value="tumbler">Tumbler</option>
+    <option value="kaos">Kaos & Polo</option>
+    <option value="tas">Tas & Totebag</option>
+    <option value="mug">Mug & Gelas</option>
+    <option value="alat-tulis">Alat Tulis</option>
+    <option value="elektronik">Elektronik</option>
+  </select>
+</div>
+<div class="col-lg-4 col-md-6 mb-3">
+  <select class="form-select" id="filter-moq">
+    <option value="">Min. Order</option>
+    <option value="25">25+ pcs</option>
+    <option value="50">50+ pcs</option>
+    <option value="100">100+ pcs</option>
+  </select>
+</div>
               </div>
             </div>
           </div>
@@ -204,7 +204,7 @@
             <div class="row">
 
               <!-- 1. Gift Set Eksekutif -->
-              <div class="col-lg-4 col-md-6 mb-4">
+              <div class="col-lg-4 col-md-6 mb-4" data-category="premium" data-type="alat-tulis" data-moq="50">
                 <div class="tour-card">
                   <div class="tour-image">
                     <img src="assets/img/travel/Gift_set_with_notebook.webp" alt="Gift Set Eksekutif Premium" class="img-fluid" loading="lazy">
@@ -223,7 +223,7 @@
               </div>
 
               <!-- 2. Plakat Kristal -->
-              <div class="col-lg-4 col-md-6 mb-4">
+              <div class="col-lg-4 col-md-6 mb-4" data-category="premium" data-type="lainnya" data-moq="10">
                 <div class="tour-card">
                   <div class="tour-image">
                     <img src="assets/img/travel/3D_Custom_Logo.webp" alt="Plakat Kristal Custom 3D" class="img-fluid" loading="lazy">
@@ -242,7 +242,7 @@
               </div>
 
               <!-- 3. Powerbank Wireless -->
-              <div class="col-lg-4 col-md-6 mb-4">
+              <div class="col-lg-4 col-md-6 mb-4" data-category="premium" data-type="elektronik" data-moq="50">
                 <div class="tour-card">
                   <div class="tour-image">
                     <img src="assets/img/travel/Wireless_fast_charging.webp" alt="Powerbank Wireless Custom Logo" class="img-fluid" loading="lazy">
@@ -261,7 +261,7 @@
               </div>
 
               <!-- 4. Mug Heater Set -->
-              <div class="col-lg-4 col-md-6 mb-4">
+              <div class="col-lg-4 col-md-6 mb-4" data-category="premium" data-type="mug" data-moq="25">
                 <div class="tour-card">
                   <div class="tour-image">
                     <img src="assets/img/travel/Ceramic_mug.webp" alt="Set Cangkir Keramik Eksklusif" class="img-fluid" loading="lazy">
@@ -280,7 +280,7 @@
               </div>
 
               <!-- 5. Welcome Box -->
-              <div class="col-lg-4 col-md-6 mb-4">
+              <div class="col-lg-4 col-md-6 mb-4" data-category="onboarding" data-type="lainnya" data-moq="25">
                 <div class="tour-card">
                   <div class="tour-image">
                     <img src="assets/img/travel/Corporate_merchandise.webp" alt="Welcome Box Custom Perusahaan" class="img-fluid" loading="lazy">
@@ -299,7 +299,7 @@
               </div>
 
               <!-- 6. Lanyard & ID Card -->
-              <div class="col-lg-4 col-md-6 mb-4">
+              <div class="col-lg-4 col-md-6 mb-4" data-category="onboarding" data-type="lainnya" data-moq="100">
                 <div class="tour-card">
                   <div class="tour-image">
                     <img src="assets/img/travel/Lanyard.webp" alt="Lanyard & ID Card Holder Custom" class="img-fluid" loading="lazy">
@@ -318,7 +318,7 @@
               </div>
 
               <!-- 7. Tumbler Stainless -->
-              <div class="col-lg-4 col-md-6 mb-4">
+              <div class="col-lg-4 col-md-6 mb-4" data-category="onboarding" data-type="tumbler" data-moq="100">
                 <div class="tour-card">
                   <div class="tour-image">
                     <img src="assets/img/travel/tumbler.webp" alt="Tumbler Stainless Steel Custom" class="img-fluid" loading="lazy">
@@ -337,7 +337,7 @@
               </div>
 
               <!-- 8. Kaos Polo -->
-              <div class="col-lg-4 col-md-6 mb-4">
+             <div class="col-lg-4 col-md-6 mb-4" data-category="onboarding" data-type="kaos" data-moq="50">
                 <div class="tour-card">
                   <div class="tour-image">
                     <img src="assets/img/travel/polo.webp" alt="Kaos Polo Perusahaan" class="img-fluid" loading="lazy">
@@ -356,7 +356,7 @@
               </div>
 
               <!-- 9. Tote Bag -->
-              <div class="col-lg-4 col-md-6 mb-4">
+              <div class="col-lg-4 col-md-6 mb-4" data-category="onboarding" data-type="tas" data-moq="100">
                 <div class="tour-card">
                   <div class="tour-image">
                     <img src="assets/img/travel/totebag.webp" alt="Tote Bag Kanvas Tebal" class="img-fluid" loading="lazy">
@@ -375,7 +375,7 @@
               </div>
 
               <!-- 10. Mug Keramik -->
-              <div class="col-lg-4 col-md-6 mb-4">
+              <div class="col-lg-4 col-md-6 mb-4" data-category="custom-logo" data-type="mug" data-moq="100">
                 <div class="tour-card">
                   <div class="tour-image">
                     <img src="assets/img/travel/Ceramic_mug.webp" alt="Mug Keramik Custom Logo" class="img-fluid" loading="lazy">
@@ -394,7 +394,7 @@
               </div>
 
               <!-- 11. Payung Lipat -->
-              <div class="col-lg-4 col-md-6 mb-4">
+              <div class="col-lg-4 col-md-6 mb-4" data-category="custom-logo" data-type="lainnya" data-moq="50">
                 <div class="tour-card">
                   <div class="tour-image">
                     <img src="assets/img/travel/payung.webp" alt="Payung Lipat Custom Sablon Logo" class="img-fluid" loading="lazy">
@@ -413,7 +413,7 @@
               </div>
 
               <!-- 12. Flashdisk Kartu -->
-              <div class="col-lg-4 col-md-6 mb-4">
+              <div class="col-lg-4 col-md-6 mb-4" data-category="custom-logo" data-type="elektronik" data-moq="100">
                 <div class="tour-card">
                   <div class="tour-image">
                     <img src="assets/img/travel/Card-shaped_flashdisk.webp" alt="Flashdisk Bentuk Kartu" class="img-fluid" loading="lazy">
@@ -432,7 +432,7 @@
               </div>
 
               <!-- 13. Jam Meja Custom -->
-              <div class="col-lg-4 col-md-6 mb-4">
+              <div class="col-lg-4 col-md-6 mb-4" data-category="custom-logo" data-type="lainnya" data-moq="25">
                 <div class="tour-card">
                   <div class="tour-image">
                     <img src="assets/img/travel/jam.webp" alt="Jam Meja Custom Perusahaan" class="img-fluid" loading="lazy">
@@ -451,7 +451,7 @@
               </div>
 
                             <!-- 14. Topi Custom -->
-              <div class="col-lg-4 col-md-6 mb-4">
+              <div class="col-lg-4 col-md-6 mb-4" data-category="custom-logo" data-type="lainnya" data-moq="50">
                 <div class="tour-card">
                   <div class="tour-image">
                     <img src="assets/img/travel/topi.webp" alt="Topi Custom Bordir Logo" class="img-fluid" loading="lazy">
@@ -470,7 +470,7 @@
               </div>
 
               <!-- 15. Notes & Pulpen Set -->
-              <div class="col-lg-4 col-md-6 mb-4">
+              <div class="col-lg-4 col-md-6 mb-4" data-category="custom-logo" data-type="alat-tulis" data-moq="100">
                 <div class="tour-card">
                   <div class="tour-image">
                     <img src="assets/img/travel/notebook.webp" alt="Notes & Pulpen Set Custom" class="img-fluid" loading="lazy">
@@ -577,6 +577,32 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script>
+(function() {
+  const filterKategori = document.getElementById('filter-kategori');
+  const filterJenis = document.getElementById('filter-jenis');
+  const filterMoq = document.getElementById('filter-moq');
+  const productCards = document.querySelectorAll('[data-category]');
+
+  function applyFilters() {
+    const kategori = filterKategori.value;
+    const jenis = filterJenis.value;
+    const moq = filterMoq.value ? parseInt(filterMoq.value) : null;
+
+    productCards.forEach(card => {
+      const matchKategori = !kategori || card.dataset.category === kategori;
+      const matchJenis = !jenis || card.dataset.type === jenis;
+      const matchMoq = !moq || parseInt(card.dataset.moq) >= moq;
+
+      card.style.display = (matchKategori && matchJenis && matchMoq) ? '' : 'none';
+    });
+  }
+
+  filterKategori.addEventListener('change', applyFilters);
+  filterJenis.addEventListener('change', applyFilters);
+  filterMoq.addEventListener('change', applyFilters);
+})();
+</script>
 
 </body>
 
