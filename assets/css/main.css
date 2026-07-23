@@ -881,6 +881,15 @@ section,
   }
 }
 
+  @media (max-width: 1199px) {
+    .header .navmenu a, .header .navmenu a:focus {
+      color: #333 !important;
+    }
+  }
+  .scrolled .header .navmenu a {
+    color: #333 !important;
+  }
+
 /*--------------------------------------------------------------
 # Global Section Titles
 --------------------------------------------------------------*/
