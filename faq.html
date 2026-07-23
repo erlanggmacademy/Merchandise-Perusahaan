@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Faq - Tour Bootstrap Template</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+  
+  <title>FAQ Hub | Minimum Order & Harga Cetak Merchandise Kantor</title>
+  <meta name="description" content="FAQ merchandise kantor. Informasi minimum order, harga cetak merchandise, cara pesan, custom logo, garansi produk, dan pengiriman ke seluruh Indonesia.">
+  <meta name="keywords" content="minimum order merchandise kantor, harga cetak merchandise, cara pesan merchandise, FAQ merchandise, vendor merchandise terpercaya">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
@@ -27,34 +28,61 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: Tour
-  * Template URL: https://bootstrapmade.com/tour-bootstrap-travel-website-template/
-  * Updated: Mar 03 2026 with Bootstrap v5.3.8
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <style>
+    #scroll-top {
+      bottom: 90px !important;
+      right: 27px !important;
+    }
+    .whatsapp-float {
+      position: fixed;
+      width: 60px;
+      height: 60px;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366;
+      color: #fff;
+      border-radius: 50%;
+      text-align: center;
+      font-size: 30px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+      z-index: 999;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      animation: pulse 2s infinite;
+    }
+    .whatsapp-float:hover {
+      background-color: #128C7E;
+      color: #fff;
+      transform: scale(1.1);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+    }
+    @keyframes pulse {
+      0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.6); }
+      70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+    }
+  </style>
 </head>
 
 <body class="faq-page">
 
+  <!-- ======= HEADER ======= -->
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="header-container container-fluid position-relative d-flex align-items-center justify-content-between">
-
       <a href="index.html" class="logo d-flex align-items-center">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.webp" alt=""> -->
-        <h1 class="sitename">Tour</h1>
+        <img src="assets/img/travel/logotr-white1.png" alt="Merchandise Kantor" class="logo-white">
+        <img src="assets/img/travel/logotr-blue1.png" alt="Merchandise Kantor" class="logo-blue">
       </a>
-
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="index.html" class="active">Beranda</a></li>
+          <li><a href="index.html">Beranda</a></li>
           <li><a href="about.html">Tentang Kami</a></li>
-          <li class="dropdown"><a href="#"><span>Produk</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <li class="dropdown"><a href="#"><span>Layanan</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-              <li><a href="product.html">All Product</a></li>
-              <li><a href="merchandise-perusahaan-premium.html">Merchandise Perusahaan Premium</a></li>
+              <li><a href="merchandise-kantor-premium.html">Merchandise Kantor Premium</a></li>
               <li><a href="merchandise-onboarding-karyawan.html">Merchandise Onboarding Karyawan</a></li>
               <li><a href="merchandise-custom-logo.html">Merchandise Custom Logo</a></li>
               <li><a href="all-product.html">All Product</a></li>
@@ -63,155 +91,152 @@
           <li><a href="blog.html">Artikel</a></li>
           <li><a href="gallery.html">Galeri</a></li>
           <li><a href="contact.html">Kontak</a></li>
-          <li><a href="faq.html">FAQ Hub</a></li>
+          <li><a href="faq.html" class="active">FAQ Hub</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
-
-      
-
     </div>
-</header>
+  </header>
 
   <main class="main">
 
     <!-- Page Title -->
-    <div class="page-title dark-background" data-aos="fade" style="background-image: url(assets/img/travel/showcase-8.webp);">
+    <div class="page-title dark-background" data-aos="fade" style="background-image: url(assets/img/travel/Corporate_gifts_3.webp);">
       <div class="container position-relative">
-        <h1>Frequently Asked Questions</h1>
-        <p>Esse dolorum voluptatum ullam est sint nemo et est ipsa porro placeat quibusdam quia assumenda numquam molestias.</p>
+        <h1>FAQ Hub</h1>
+        <p>Pertanyaan yang sering diajukan seputar pemesanan merchandise kantor custom.</p>
         <nav class="breadcrumbs">
           <ol>
-            <li><a href="index.html">Home</a></li>
-            <li class="current">Frequently Asked Questions</li>
+            <li><a href="index.html">Beranda</a></li>
+            <li class="current">FAQ Hub</li>
           </ol>
         </nav>
       </div>
-    </div><!-- End Page Title -->
+    </div>
 
     <!-- Faq Section -->
     <section id="faq" class="faq section">
-
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
         <div class="row align-items-start gy-4">
           <div class="col-lg-5" data-aos="fade-up" data-aos-delay="200">
             <div class="faq-sidebar">
               <div class="faq-image">
-                <img src="assets/img/illustration/illustration-5.webp" alt="FAQ Image" class="img-fluid" loading="lazy">
+                <img src="assets/img/travel/Corporate_merchandise.webp" alt="FAQ Merchandise Kantor" class="img-fluid" loading="lazy">
               </div>
               <div class="contact-box">
-                <h3><i class="bi bi-headset"></i> Need Assistance?</h3>
-                <p>Donec rutrum congue leo eget malesuada. Quisque velit nisi, pretium ut lacinia in, elementum id enim.</p>
-                <a href="#" class="btn-contact">Connect with Support</a>
+                <h3><i class="bi bi-headset"></i> Butuh Bantuan?</h3>
+                <p>Belum menemukan jawaban? Hubungi tim kami via WhatsApp untuk konsultasi gratis seputar merchandise kantor.</p>
+                <a href="https://wa.me/6288989643555" target="_blank" class="btn-contact"><i class="bi bi-whatsapp"></i> Chat WhatsApp</a>
               </div>
             </div>
           </div>
 
           <div class="col-lg-7">
             <div class="faq-tabs">
-              <ul class="nav nav-pills mb-4" id="faqTabs-faq" role="tablist" data-aos="fade-up" data-aos-delay="100">
+              <ul class="nav nav-pills mb-4" id="faqTabs" role="tablist" data-aos="fade-up" data-aos-delay="100">
                 <li class="nav-item" role="presentation">
-                  <button class="nav-link active" id="general-tab-faq" data-bs-toggle="pill" data-bs-target="#general-faq-faq" type="button" role="tab" aria-controls="general-faq-faq" aria-selected="true">General Inquiries</button>
+                  <button class="nav-link active" id="umum-tab" data-bs-toggle="pill" data-bs-target="#umum" type="button" role="tab" aria-controls="umum" aria-selected="true">Umum</button>
                 </li>
                 <li class="nav-item" role="presentation">
-                  <button class="nav-link" id="account-tab-faq" data-bs-toggle="pill" data-bs-target="#account-faq-faq" type="button" role="tab" aria-controls="account-faq-faq" aria-selected="false">Account Services</button>
+                  <button class="nav-link" id="pemesanan-tab" data-bs-toggle="pill" data-bs-target="#pemesanan" type="button" role="tab" aria-controls="pemesanan" aria-selected="false">Pemesanan</button>
                 </li>
                 <li class="nav-item" role="presentation">
-                  <button class="nav-link" id="payment-tab-faq" data-bs-toggle="pill" data-bs-target="#payment-faq-faq" type="button" role="tab" aria-controls="payment-faq-faq" aria-selected="false">Billing &amp; Payments</button>
+                  <button class="nav-link" id="produksi-tab" data-bs-toggle="pill" data-bs-target="#produksi" type="button" role="tab" aria-controls="produksi" aria-selected="false">Produksi & Kirim</button>
                 </li>
               </ul>
 
-              <div class="tab-content" id="faqTabsContent-faq">
-                <div class="tab-pane fade show active" id="general-faq-faq" role="tabpanel" aria-labelledby="general-tab-faq">
-                  <div class="accordion" id="generalAccordion-faq">
+              <div class="tab-content" id="faqTabsContent">
+                <!-- Tab Umum -->
+                <div class="tab-pane fade show active" id="umum" role="tabpanel" aria-labelledby="umum-tab">
+                  <div class="accordion" id="umumAccordion">
+
                     <div class="faq-item" data-aos="fade-up" data-aos-delay="150">
-                      <h3>How do I create a new account?</h3>
+                      <h3>Apa itu merchandise kantor custom?</h3>
                       <div class="faq-content">
-                        <p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Donec sollicitudin molestie malesuada. Vestibulum ac diam sit amet quam vehicula elementum. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.</p>
+                        <p>Merchandise kantor custom adalah produk promosi atau souvenir yang dibuat khusus dengan logo, nama, atau desain perusahaan Anda. Mulai dari gift set eksekutif, welcome kit karyawan, hingga souvenir promosi harian.</p>
                       </div>
                       <i class="bi bi-chevron-down faq-toggle"></i>
-                    </div><!-- End FAQ Item-->
+                    </div>
 
                     <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
-                      <h3>What are the system requirements?</h3>
+                      <h3>Apakah bisa custom logo di semua produk?</h3>
                       <div class="faq-content">
-                        <p>Vivamus suscipit tortor eget felis porttitor volutpat. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.</p>
+                        <p>Sebagian besar produk kami bisa dicustom logo dengan berbagai teknik: sablon, bordir, grafir laser, dan print UV full color. Teknik yang digunakan disesuaikan dengan material produk agar hasil optimal.</p>
                       </div>
                       <i class="bi bi-chevron-down faq-toggle"></i>
-                    </div><!-- End FAQ Item-->
+                    </div>
 
                     <div class="faq-item" data-aos="fade-up" data-aos-delay="250">
-                      <h3>Can I access my data offline?</h3>
+                      <h3>Apakah ada garansi untuk produk merchandise?</h3>
                       <div class="faq-content">
-                        <p>Nulla quis lorem ut libero malesuada feugiat. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Nulla porttitor accumsan tincidunt. Quisque velit nisi, pretium ut lacinia in, elementum id enim.</p>
+                        <p>Ya, semua produk kami bergaransi. Jika ada produk cacat atau tidak sesuai spesifikasi yang disepakati, kami ganti tanpa biaya tambahan. Kepuasan klien adalah prioritas kami.</p>
                       </div>
                       <i class="bi bi-chevron-down faq-toggle"></i>
-                    </div><!-- End FAQ Item-->
+                    </div>
 
-                    <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
-                      <h3>How do I report a bug or issue?</h3>
-                      <div class="faq-content">
-                        <p>Pellentesque in ipsum id orci porta dapibus. Nulla quis lorem ut libero malesuada feugiat. Donec sollicitudin molestie malesuada. Sed porttitor lectus nibh.</p>
-                      </div>
-                      <i class="bi bi-chevron-down faq-toggle"></i>
-                    </div><!-- End FAQ Item-->
-
-                    <div class="faq-item" data-aos="fade-up" data-aos-delay="350">
-                      <h3>What is your data privacy policy?</h3>
-                      <div class="faq-content">
-                        <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Vestibulum ac diam sit amet quam vehicula elementum. Sed porttitor lectus nibh.</p>
-                      </div>
-                      <i class="bi bi-chevron-down faq-toggle"></i>
-                    </div><!-- End FAQ Item-->
                   </div>
                 </div>
 
-                <div class="tab-pane fade" id="account-faq-faq" role="tabpanel" aria-labelledby="account-tab-faq">
-                  <div class="accordion" id="accountAccordion-faq">
+                <!-- Tab Pemesanan -->
+                <div class="tab-pane fade" id="pemesanan" role="tabpanel" aria-labelledby="pemesanan-tab">
+                  <div class="accordion" id="pemesananAccordion">
+
                     <div class="faq-item" data-aos="fade-up" data-aos-delay="150">
-                      <h3>How do I reset my password?</h3>
+                      <h3>Bagaimana cara pesan merchandise kantor?</h3>
                       <div class="faq-content">
-                        <p>Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Nulla quis lorem ut libero malesuada feugiat.</p>
+                        <p>Hubungi tim kami via WhatsApp di <strong>+62 889-8964-3555</strong> atau isi form di halaman <a href="contact.html">Kontak</a>. Kami akan bantu dari konsultasi produk, desain logo, hingga proses produksi dan pengiriman.</p>
                       </div>
                       <i class="bi bi-chevron-down faq-toggle"></i>
-                    </div><!-- End FAQ Item-->
+                    </div>
 
                     <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
-                      <h3>How to update account information?</h3>
+                      <h3>Berapa minimum order merchandise kantor?</h3>
                       <div class="faq-content">
-                        <p>Donec rutrum congue leo eget malesuada. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.</p>
+                        <p>Minimum order bervariasi tergantung jenis produk, mulai dari 25-100 pcs. Kami fleksibel melayani uji coba dalam jumlah kecil maupun pemesanan skala besar untuk event perusahaan.</p>
                       </div>
                       <i class="bi bi-chevron-down faq-toggle"></i>
-                    </div><!-- End FAQ Item-->
+                    </div>
+
+                    <div class="faq-item" data-aos="fade-up" data-aos-delay="250">
+                      <h3>Bagaimana cara mendapatkan penawaran harga?</h3>
+                      <div class="faq-content">
+                        <p>Kirimkan detail kebutuhan Anda (jenis produk, jumlah, deadline) via WhatsApp atau form kontak. Tim kami akan memberikan penawaran harga terbaik dalam waktu 1-2 jam di jam kerja.</p>
+                      </div>
+                      <i class="bi bi-chevron-down faq-toggle"></i>
+                    </div>
+
                   </div>
                 </div>
 
-                <div class="tab-pane fade" id="payment-faq-faq" role="tabpanel" aria-labelledby="payment-tab-faq">
-                  <div class="accordion" id="paymentAccordion-faq">
+                <!-- Tab Produksi & Kirim -->
+                <div class="tab-pane fade" id="produksi" role="tabpanel" aria-labelledby="produksi-tab">
+                  <div class="accordion" id="produksiAccordion">
+
                     <div class="faq-item" data-aos="fade-up" data-aos-delay="150">
-                      <h3>What payment methods are accepted?</h3>
+                      <h3>Berapa lama proses produksi merchandise?</h3>
                       <div class="faq-content">
-                        <p>Pellentesque in ipsum id orci porta dapibus. Sed porttitor lectus nibh. Cras ultricies ligula sed magna dictum porta. Curabitur aliquet quam id dui posuere blandit. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.</p>
+                        <p>Estimasi pengerjaan 7-14 hari kerja tergantung jumlah dan kompleksitas produk. Kami informasikan timeline detail saat konsultasi agar sesuai dengan deadline Anda.</p>
                       </div>
                       <i class="bi bi-chevron-down faq-toggle"></i>
-                    </div><!-- End FAQ Item-->
+                    </div>
 
                     <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
-                      <h3>When will my payment be processed?</h3>
+                      <h3>Apakah bisa kirim ke luar kota?</h3>
                       <div class="faq-content">
-                        <p>Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Nulla porttitor accumsan tincidunt. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Quisque velit nisi, pretium ut lacinia in.</p>
+                        <p>Ya, pengiriman ke seluruh Indonesia. Gratis ongkir untuk area Jabodetabek dengan minimum order tertentu. Untuk luar Jawa, kami menggunakan jasa ekspedisi terpercaya.</p>
                       </div>
                       <i class="bi bi-chevron-down faq-toggle"></i>
-                    </div><!-- End FAQ Item-->
+                    </div>
 
                     <div class="faq-item" data-aos="fade-up" data-aos-delay="250">
-                      <h3>Can I get a refund for my purchase?</h3>
+                      <h3>Apakah bisa request desain gratis?</h3>
                       <div class="faq-content">
-                        <p>Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Donec sollicitudin molestie malesuada.</p>
+                        <p>Tentu! Tim desain kami siap membantu membuat mockup desain gratis untuk memastikan logo perusahaan Anda tercetak dengan sempurna di produk yang dipilih.</p>
                       </div>
                       <i class="bi bi-chevron-down faq-toggle"></i>
-                    </div><!-- End FAQ Item-->
+                    </div>
+
                   </div>
                 </div>
               </div>
@@ -220,83 +245,61 @@
         </div>
 
       </div>
-
-    </section><!-- /Faq Section -->
+    </section>
 
   </main>
 
+  <!-- ======= FOOTER ======= -->
   <footer id="footer" class="footer position-relative dark-background">
-
-    <div class="footer-newsletter">
-      <div class="container">
-        <div class="row justify-content-center text-center">
-          <div class="col-lg-6">
-            <h4>Join Our Newsletter</h4>
-            <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
-            <form action="forms/newsletter.php" method="post" class="php-email-form">
-              <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Subscribe"></div>
-              <div class="loading">Loading</div>
-              <div class="error-message"></div>
-              <div class="sent-message">Your subscription request has been sent. Thank you!</div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <div class="container footer-top">
       <div class="row gy-4">
         <div class="col-lg-4 col-md-6 footer-about">
           <a href="index.html" class="d-flex align-items-center">
-            <span class="sitename">Tour</span>
+            <span class="sitename">Merchandise Kantor</span>
           </a>
           <div class="footer-contact pt-3">
-            <p>A108 Adam Street</p>
-            <p>New York, NY 535022</p>
-            <p class="mt-3"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
-            <p><strong>Email:</strong> <span>info@example.com</span></p>
+            <p>Pusat souvenir kantor dan merchandise kantor. Menyediakan berbagai pilihan produk custom untuk kebutuhan promosi, seminar, dan hadiah kantor.</p>
           </div>
         </div>
-
         <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Useful Links</h4>
+          <h4>Layanan</h4>
           <ul>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">About us</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Services</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of service</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="merchandise-kantor-premium.html">Merchandise Premium</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="merchandise-onboarding-karyawan.html">Onboarding Karyawan</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="merchandise-custom-logo.html">Custom Logo</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="all-product.html">Semua Produk</a></li>
           </ul>
         </div>
-
         <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Our Services</h4>
+          <h4>Informasi</h4>
           <ul>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Web Design</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Web Development</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Product Management</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Marketing</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="about.html">Tentang Kami</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="blog.html">Artikel</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="faq.html">FAQ Hub</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="contact.html">Kontak</a></li>
           </ul>
         </div>
-
         <div class="col-lg-4 col-md-12">
-          <h4>Follow Us</h4>
-          <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
+          <h4>Ikuti Kami</h4>
+          <p>Temukan inspirasi merchandise dan update produk terbaru di sosial media kami.</p>
           <div class="social-links d-flex">
-            <a href=""><i class="bi bi-twitter-x"></i></a>
-            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-whatsapp"></i></a>
             <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
             <a href=""><i class="bi bi-linkedin"></i></a>
           </div>
         </div>
-
       </div>
     </div>
-
     <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">MyWebsite</strong> <span>All Rights Reserved</span></p>
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Merchandise Kantor</strong> <span>All Rights Reserved</span></p>
     </div>
-
   </footer>
+
+  <!-- WhatsApp Float -->
+  <a href="https://wa.me/6288989643555" target="_blank" class="whatsapp-float" title="Chat via WhatsApp">
+    <i class="bi bi-whatsapp"></i>
+  </a>
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
@@ -313,8 +316,6 @@
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-
-  <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
 
 </body>
