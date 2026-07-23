@@ -4020,7 +4020,10 @@ section,
 .travel-tours .tour-card .tour-image {
   position: relative;
 }
-
+@font-face {
+  font-family: "bootstrap-icons";
+  font-display: swap;
+}
 .travel-tours .tour-card .tour-image .tour-badge {
   position: absolute;
   top: 15px;
